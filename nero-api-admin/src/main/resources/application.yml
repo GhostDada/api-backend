@@ -26,8 +26,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/nero_api
-    username: root
-    password: lzh010908
+    username: xxx
+    password: xxx
   # 文件上传
   servlet:
     multipart:
@@ -82,12 +82,12 @@ cos:
     bucket: xxx
 aliyun:
   oss:
-    endpoint: oss-cn-beijing.aliyuncs.com
-    urlPrefix: http://shiahaoa-api-project.oss-cn-hangzhou.aliyuncs.com
-    accessKeyId: LTAI5tE7vKdDFAvUC6TkF4Qn
-    accessKeySecret: Iar4nuijicVILAYvzkrMgJTZfYInII
-    bucketName: shiahaoa-api-project
-    fileHost: files
+    endpoint: xxx
+    urlPrefix: xxx
+    accessKeyId: xxx
+    accessKeySecret: xxx
+    bucketName: xxx
+    fileHost: xxx
 
 
 
