@@ -1,112 +1,68 @@
-# Nero-API 接口开放平台
+# API-Backend
 
-基于 Java SpringBoot 的项目初始模板，整合了常用框架和主流业务的示例代码。
-
-[toc]
-
-## 模板特点
-
-### 主流框架 & 特性
-
-- Spring Boot 2.7.x（贼新）
-- Spring MVC
-- MyBatis + MyBatis Plus 数据访问（开启分页）
-- Spring Boot 调试工具和项目处理器
-- Spring AOP 切面编程
-- Spring Scheduler 定时任务
-- Spring 事务注解
-
-### 数据存储
-
-- MySQL 数据库
-- Redis 内存数据库
-- Elasticsearch 搜索引擎
-- 腾讯云 COS 对象存储
-
-### 工具类
-
-- Easy Excel 表格处理
-- Hutool 工具库
-- Gson 解析库
-- Apache Commons Lang3 工具类
-- Lombok 注解
-
-### 业务特性
-
-- Spring Session Redis 分布式登录
-- 全局请求响应拦截器（记录日志）
-- 全局异常处理器
-- 自定义错误码
-- 封装通用响应类
-- Swagger + Knife4j 接口文档
-- 自定义权限注解 + 全局校验
-- 全局跨域处理
-- 长整数丢失精度解决
-- 多环境配置
+## 项目介绍
+API-Backend 接口开放平台后端代码仓库。 这是一个提供API在线接口供开发者调用的平台
+用户可以登录、注册，开通接口调用权限。接口的调用会被统计，后续可能收费。
+管理员可以发布接口、下线接口、接入接口，以及在线调试接口。
 
 
-### 单元测试
+## 项目背景
 
-- JUnit5 单元测试
-- 示例单元测试类
+1. 前端开发都需要使用后端接口来获取数据。
+2. 网上有很多现成的API接口调用平台
 
-### 架构设计
+自己动手做一个API接口平台：
+1. 用户可以访问前台，登录、注册，开通、在线调用接口调用权限。
+2. 管理员可以对接口进行增删改查
 
-- 合理分层
+要求：
+1. 防止攻击（安全性）
+2. 不能随意调用（限制、开通）
+3. 统计调用次数
+4. 流量保护
+5. API接入
 
-### MySQL 数据库
+## 技术选型
+### 前端
+- Ant Design Pro
+- React
+- Ant Design Procomponents
+- Umi
+- Umi Request（Axios的封装）
 
-1）修改 `application.yml` 的数据库配置为你自己的：
+### 后端
+- Spring Boot
+- Spring Cloud Gateway
+- Dubbo
+- Nacos
+- Spring Boot Starter（SDK开发）
 
-```yml
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/my_db
-    username: root
-    password: 123456
-```
+### 效果展示
 
-2）执行 `sql/create_table.sql` 中的数据库语句，自动创建库表
+<center>登录页面</center>
 
-3）启动项目，访问 `http://localhost:8101/api/doc.html` 即可打开接口文档，不需要写前端就能在线调试接口了~
+![image-20240526170034109](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170034109.png)
 
-![](doc/swagger.png)
+<center>首页</center>
 
-### Redis 分布式登录
+![image-20240526170501431](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170501431.png)
 
-1）修改 `application.yml` 的 Redis 配置为你自己的：
+<center>接口详情</center>
 
-```yml
-spring:
-  redis:
-    database: 1
-    host: localhost
-    port: 6379
-    timeout: 5000
-    password: 123456
-```
+![image-20240526170702386](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170702386.png)
 
-2）修改 `application.yml` 中的 session 存储方式：
+<center>在线调用接口</center>
 
-```yml
-spring:
-  session:
-    store-type: redis
-```
+![image-20240526170740391](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170740391.png)
 
-3）移除 `MainApplication` 类开头 `@SpringBootApplication` 注解内的 exclude 参数：
+<center>接口管理</center>
 
-修改前：
+![image-20240526170900612](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170900612.png)
 
-```java
-@SpringBootApplication(exclude = {RedisAutoConfiguration.class})
-```
+<center>接口统计分析</center>
 
-修改后：
+![image-20240526170936049](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170936049.png)
 
+<center>个人中心</center>
 
-```java
-@SpringBootApplication
-```
-
+![image-20240526171002552](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526171002552.png)
