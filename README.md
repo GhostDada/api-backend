@@ -41,28 +41,28 @@ API-Backend 接口开放平台后端代码仓库。 这是一个提供API在线�
 
 <center>登录页面</center>
 
-![image-20240526170034109](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170034109.png)
+![image-20240526170034109](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170034109.png)
 
 <center>首页</center>
 
-![image-20240526170501431](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170501431.png)
+![image-20240526170501431](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170501431.png)
 
 <center>接口详情</center>
 
-![image-20240526170702386](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170702386.png)
+![image-20240526170702386](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170702386.png)
 
 <center>在线调用接口</center>
 
-![image-20240526170740391](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170740391.png)
+![image-20240526170740391](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170740391.png)
 
 <center>接口管理</center>
 
-![image-20240526170900612](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170900612.png)
+![image-20240526170900612](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170900612.png)
 
 <center>接口统计分析</center>
 
-![image-20240526170936049](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526170936049.png)
+![image-20240526170936049](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526170936049.png)
 
 <center>个人中心</center>
 
-![image-20240526171002552](C:\Users\18361\AppData\Roaming\Typora\typora-user-images\image-20240526171002552.png)
+![image-20240526171002552](https://github.com/GhostDada/api-backend/blob/master/show-images/image-20240526171002552.png)
